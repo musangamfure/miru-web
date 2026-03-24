@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miru Mushrooms — Creating Successful Farmers in Rwanda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">🍄</div>
+        Miru
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#growth">Growth</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Start Farming</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          Creating<br /><em>Successful</em><br />Mushroom<br />Farmers
+        </h1>
+        <p class="hero-sub">
+          Rwanda's #1 mushroom production company. We don't only sell tubes — we
+          build farmer success ecosystems that compound.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">Our Products</a>
+          <a href="#support" class="btn-ghost">See How It Works</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-carousel" id="heroCarousel">
+          <div class="carousel-slide active" data-index="0">
+            <img
+              src="/images/cottonseed_hulls.jpg"
+              alt="Cottonseed Hull Substrate"
+              loading="eager"
+            />
+            <div class="slide-caption">
+              <span class="slide-num">01 / 04</span>
+              <span class="slide-title">Cottonseed Hull Substrate</span>
+              <span class="slide-body"
+                >Premium-grade cottonseed hulls — the foundation of every Miru
+                tube</span
+              >
+            </div>
+          </div>
+          <div class="carousel-slide" data-index="1">
+            <img
+              src="/images/Mushroom tubes.jpg"
+              alt="Substrate Quality Detail"
+              loading="lazy"
+            />
+            <div class="slide-caption">
+              <span class="slide-num">02 / 04</span>
+              <span class="slide-title">Substrate Quality Detail</span>
+              <span class="slide-body"
+                >Close-up: the fibrous texture that maximises mycelial
+                colonisation</span
+              >
+            </div>
+          </div>
+          <div class="carousel-slide" data-index="2">
+            <img
+              src="/images/mushrooms.jpg"
+              alt="Production at Scale"
+              loading="lazy"
+            />
+            <div class="slide-caption">
+              <span class="slide-num">03 / 04</span>
+              <span class="slide-title">Production at Scale</span>
+              <span class="slide-body"
+                >Hundreds of fully-colonised tubes in our climate-controlled
+                grow room</span
+              >
+            </div>
+          </div>
+          <div class="carousel-slide" data-index="3">
+            <img
+              src="/images/cottonseed.jpg"
+              alt="The Harvest"
+              loading="lazy"
+            />
+            <div class="slide-caption">
+              <span class="slide-num">04 / 04</span>
+              <span class="slide-title">The Harvest</span>
+              <span class="slide-body"
+                >Oyster mushrooms at peak flush — from our tubes to your
+                income</span
+              >
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button
+              class="carousel-dot active"
+              aria-label="Slide 1"
+              data-slide="0"
+            ></button>
+            <button
+              class="carousel-dot"
+              aria-label="Slide 2"
+              data-slide="1"
+            ></button>
+            <button
+              class="carousel-dot"
+              aria-label="Slide 3"
+              data-slide="2"
+            ></button>
+            <button
+              class="carousel-dot"
+              aria-label="Slide 4"
+              data-slide="3"
+            ></button>
+          </div>
+          <button
+            class="carousel-arrow prev"
+            aria-label="Previous"
+            id="carouselPrev"
+          >
+            &#8592;
+          </button>
+          <button
+            class="carousel-arrow next"
+            aria-label="Next"
+            id="carouselNext"
+          >
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-inner" id="ticker">
+        <!-- Items duplicated for seamless loop -->
+        <span class="ticker-item"
+          >Premium Oyster Mushroom Tubes <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >100% Colonization Guarantee <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >185–200% ROI per Tube <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >WhatsApp Support Community <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Free Market Access Facilitation <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Rwanda's #1 Mushroom Company <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Contamination Replacement Guarantee <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >0.5–1.5 kg Substrate per Tube <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Premium Oyster Mushroom Tubes <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >100% Colonization Guarantee <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >185–200% ROI per Tube <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >WhatsApp Support Community <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Free Market Access Facilitation <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Rwanda's #1 Mushroom Company <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >Contamination Replacement Guarantee <span class="ticker-dot"></span
+        ></span>
+        <span class="ticker-item"
+          >2.5 kg Substrate per Tube <span class="ticker-dot"></span
+        ></span>
+      </div>
+    </div>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="about">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-text">
+            <div class="section-label reveal">Our Philosophy</div>
+            <h2 class="section-title reveal">
+              We are not only a<br /><em>tube supplier</em>
+            </h2>
+            <div class="pull-quote reveal">
+              "Our competitive advantage isn't just selling tubes — it's
+              creating successful mushroom farmers."
+            </div>
+            <p class="reveal">
+              Most mushroom suppliers focus on the transaction: sell tubes,
+              collect payment, move on. This creates a vicious cycle where
+              farmers struggle alone, fail, and spread skepticism across the
+              market.
+            </p>
+            <p class="reveal">
+              Miru Mushrooms breaks this cycle by investing deeply in every
+              farmer's success. When we make farmers successful, they become our
+              most powerful marketing engine — generating 3–5 referrals each,
+              creating a compounding growth loop that competitors can never
+              replicate.
+            </p>
+            <p class="reveal">
+              We apply our systematic excellence to every aspect of our
+              operation — from 7-checkpoint production quality control to our
+              marketing system — building the operational DNA that compounds in
+              our favor every single day.
+            </p>
+          </div>
+
+          <div class="philosophy-visual">
+            <div class="philosophy-card">
+              <div class="card-num">01</div>
+              <div class="card-title">Farmer Success First</div>
+              <div class="card-body">
+                Every decision is evaluated through one lens: does this help our
+                farmers thrive?
+              </div>
+            </div>
+            <div class="philosophy-card">
+              <div class="card-num">02</div>
+              <div class="card-title">Radical Transparency</div>
+              <div class="card-body">
+                We show everything — our process, our challenges, our farmer
+                results. Trust is built through openness.
+              </div>
+            </div>
+            <div class="philosophy-card">
+              <div class="card-num">03</div>
+              <div class="card-title">&lt;3%</div>
+              <div
+                class="card-body"
+                style="
+                  font-family: 'Syne', sans-serif;
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+              >
+                Contamination Rate<br /><span
+                  style="font-weight: 400; opacity: 0.7; text-transform: none"
+                  >vs industry 15–20%</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM VS SOLUTION -->
+    <section class="cycle-section">
+      <div class="container">
+        <div class="section-label reveal" style="color: var(--mist)">
+          Why Miru Wins
+        </div>
+        <h2 class="section-title reveal" style="color: var(--cream)">
+          Two different <em>games</em>
+        </h2>
+        <br /><br />
+        <div class="cycle-grid">
+          <div class="cycle-block bad reveal">
+            <div class="cycle-header">❌ Competitor Model</div>
+            <div class="cycle-steps">
+              <div class="cycle-step">
+                <div class="step-num">01</div>
+                <div class="step-text">
+                  <strong>Sell Tubes</strong>Farmer receives product with
+                  minimal guidance
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">02</div>
+                <div class="step-text">
+                  <strong>Minimal Support</strong>Farmer navigates problems
+                  alone
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">03</div>
+                <div class="step-text">
+                  <strong>Mixed Results</strong>Contamination, low yields,
+                  confusion
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">04</div>
+                <div class="step-text">
+                  <strong>Find New Customer</strong>Constant, expensive
+                  acquisition with no referrals
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                margin-top: 2rem;
+                padding: 1.5rem;
+                background: rgba(181, 98, 42, 0.15);
+                border-left: 3px solid var(--terracotta);
+              "
+            >
+              <div
+                style="
+                  font-family: 'DM Mono', monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.12em;
+                  text-transform: uppercase;
+                  color: var(--terracotta);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Result
+              </div>
+              <div style="font-size: 0.95rem; opacity: 0.7">
+                CAC constant · LTV: 1 purchase · Linear, expensive growth
+              </div>
+            </div>
+          </div>
+
+          <div class="cycle-block good reveal">
+            <div class="cycle-header">✓ Miru Model</div>
+            <div class="cycle-steps">
+              <div class="cycle-step">
+                <div class="step-num">01</div>
+                <div class="step-text">
+                  <strong>Partner with Farmer</strong>Full onboarding, setup
+                  verification, WhatsApp community
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">02</div>
+                <div class="step-text">
+                  <strong>Ensure Their Success</strong>Daily support through
+                  colonization, harvest, and beyond
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">03</div>
+                <div class="step-text">
+                  <strong>Farmer Thrives</strong>185–200% ROI, market
+                  connections, growing income
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">04</div>
+                <div class="step-text">
+                  <strong>Farmer Tells Others</strong>3–5 referrals generated
+                  organically per farmer
+                </div>
+              </div>
+              <div class="cycle-step">
+                <div class="step-num">05</div>
+                <div class="step-text">
+                  <strong>Cycle Compounds</strong>Repeat purchases + referral
+                  chain · momentum builds
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                margin-top: 2rem;
+                padding: 1.5rem;
+                background: rgba(74, 94, 58, 0.3);
+                border-left: 3px solid #8fcb6a;
+              "
+            >
+              <div
+                style="
+                  font-family: 'DM Mono', monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.12em;
+                  text-transform: uppercase;
+                  color: #8fcb6a;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Result
+              </div>
+              <div style="font-size: 0.95rem; opacity: 0.7">
+                CAC drops 5× by Year 3 · LTV: 108,000 RWF · Exponential growth
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products-header">
+          <div>
+            <div class="section-label reveal">Products & Pricing</div>
+            <h2 class="section-title reveal">
+              Our Products &<br /><em>Pricing</em>
+            </h2>
+          </div>
+          <div class="products-intro reveal">
+            Every purchase includes our complete farmer success ecosystem —
+            consultation, onboarding, ongoing support, market connections, and
+            community access. This isn't a product, it's a partnership.
+          </div>
+        </div>
+
+        <!-- Tube specs -->
+        <div class="tube-highlight reveal">
+          <div
+            style="
+              font-family: 'Syne', sans-serif;
+              font-weight: 700;
+              font-size: 1.2rem;
+              margin-bottom: 0.5rem;
+              letter-spacing: 0.05em;
+            "
+          >
+            PREMIUM OYSTER MUSHROOM TUBE
+          </div>
+          <div
+            style="
+              font-family: 'DM Mono', monospace;
+              font-size: 0.7rem;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: var(--gold);
+            "
+          >
+            Production Specifications
+          </div>
+          <div class="tube-specs">
+            <div class="spec-item">
+              <div class="spec-label">Substrate Weight</div>
+              <div class="spec-value">0.5–1.5kg per tube</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Composition</div>
+              <div class="spec-value">
+                100% cottonseed hulls · 20% rice bran · 5% supplements
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Sterilization</div>
+              <div class="spec-value">121°C for 24+ hours</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Colonization Time</div>
+              <div class="spec-value">30–45 days</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Expected Yield</div>
+              <div class="spec-value">
+                0.5–1.5kg over 3 months (6–9 flushes)
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Contamination Rate</div>
+              <div class="spec-value">&lt;3% (Industry: 15–20%)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="pricing-cards">
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Cottonseed Hull Substrate</div>
+            <div class="pricing-amount">500</div>
+            <div class="pricing-unit">
+              RWF per kg · High-quality bulk substrate
+            </div>
+            <ul class="pricing-features">
+              <li>Premium-grade cottonseed hulls</li>
+              <li>Ideal moisture retention for oyster mushrooms</li>
+              <li>Low contamination risk — clean & consistent</li>
+              <li>Suitable for home & commercial growers</li>
+              <li>Available in 50 kg bags</li>
+              <li>Substrate mixing guidance provided</li>
+              <li>WhatsApp support included</li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="width: 100%; text-align: center; display: block"
+              >Order Substrate</a
+            >
+          </div>
+
+          <div class="pricing-card featured reveal">
+            <div class="pricing-tier">Oyster Mushroom Tube</div>
+            <div class="pricing-amount">600</div>
+            <div class="pricing-unit">RWF per tube · Our primary product</div>
+            <ul class="pricing-features">
+              <li>Premium oyster mushroom spawn tube</li>
+              <li>100% cottonseed hull substrate</li>
+              <li>30–45 day colonisation window</li>
+              <li>6–9 flushes over 3 months</li>
+              <li>Complete growing guide included</li>
+              <li>Contamination replacement guarantee</li>
+              <li>WhatsApp community & support</li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="
+                background: var(--gold);
+                width: 100%;
+                text-align: center;
+                display: block;
+              "
+              >Book Tubes</a
+            >
+          </div>
+
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Fresh Oyster Mushrooms</div>
+            <div class="pricing-amount">3,000</div>
+            <div class="pricing-unit">RWF per kg · Farm-fresh harvest</div>
+            <ul class="pricing-features">
+              <li>Harvested to order — peak freshness</li>
+              <li>Grey & white oyster varieties available</li>
+              <li>Zero pesticides, naturally grown</li>
+              <li>Suitable for restaurants, hotels & retail</li>
+              <li>Bulk orders welcome</li>
+              <li>Kigali delivery available</li>
+              <li>Market connection support for resellers</li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="width: 100%; text-align: center; display: block"
+              >Buy Mushrooms</a
+            >
+          </div>
+        </div>
+
+        <!-- ROI callout -->
+        <div class="roi-callout reveal">
+          <div class="roi-stat">
+            <div class="roi-num">1,000</div>
+            <div class="roi-label">Min. Revenue per Tube (RWF)</div>
+          </div>
+          <div class="roi-stat">
+            <div class="roi-num">42.85%</div>
+            <div class="roi-label">Minimum ROI over 3 Months</div>
+          </div>
+          <div class="roi-stat">
+            <div class="roi-num">6–9</div>
+            <div class="roi-label">Mushroom Flushes per Tube</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT JOURNEY -->
+    <section class="journey" id="support">
+      <div class="container">
+        <div class="section-label reveal">Farmer Journey</div>
+        <h2 class="section-title reveal">
+          Your success is our<br /><em>success system</em>
+        </h2>
+        <p
+          class="reveal"
+          style="
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.75;
+            max-width: 600px;
+            margin-bottom: 0;
+          "
+        >
+          Every Miru purchase activates a comprehensive support ecosystem from
+          day zero through ongoing growth — all included at no extra cost.
+        </p>
+
+        <div class="journey-timeline">
+          <div class="journey-step">
+            <div class="journey-time">
+              <div class="time-period">Before</div>
+              <div class="time-label">Pre-Purchase</div>
+            </div>
+            <div class="journey-content">
+              <h3>Free Education & Consultation</h3>
+              <p>
+                Before you spend a single Franc, we equip you with everything
+                you need to make an informed decision. Free consultations via
+                phone, WhatsApp, or in-person. Access to our full growing guide,
+                ROI calculator, and success story library.
+              </p>
+              <div class="journey-tags">
+                <span class="tag">Free Consultation</span>
+                <span class="tag">ROI Calculator</span>
+                <span class="tag">Growing Guide</span>
+                <span class="tag">Success Stories</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-step">
+            <div class="journey-time">
+              <div class="time-period">Days 1–30</div>
+              <div class="time-label">Onboarding</div>
+            </div>
+            <div class="journey-content">
+              <h3>Launch Support</h3>
+              <p>
+                Welcome packet with detailed instructions. Setup site
+                verification call or visit. Immediate WhatsApp group access with
+                your cohort. Daily personal check-ins to ensure you're set up
+                for success from the very beginning.
+              </p>
+              <div class="journey-tags">
+                <span class="tag">Welcome Kit</span>
+                <span class="tag">Setup site Verification</span>
+                <span class="tag">WhatsApp Group</span>
+                <span class="tag">Daily Check-ins</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-step">
+            <div class="journey-time">
+              <div class="time-period">Days 31–45</div>
+              <div class="time-label">Growing Phase</div>
+            </div>
+            <div class="journey-content">
+              <h3>Expert Growth Guidance</h3>
+              <p>
+                Daily growing tips delivered to your WhatsApp. Expert
+                troubleshooting for all farm issues. Progress monitoring and
+                peer support from our farmer community.
+              </p>
+              <div class="journey-tags">
+                <span class="tag">Daily Tips</span>
+                <span class="tag">Contamination Prevention</span>
+                <span class="tag">Expert Q&A</span>
+                <span class="tag">Community Support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-step">
+            <div class="journey-time">
+              <div class="time-period">Days 46–continue</div>
+              <div class="time-label">Harvest</div>
+            </div>
+            <div class="journey-content">
+              <h3>Market Connection & Harvest Optimization</h3>
+              <p>
+                Harvest timing optimization to maximize yield and quality.
+                Post-harvest care guidance for additional flushes. Direct market
+                connections to restaurants, markets, and buyers.
+              </p>
+              <div class="journey-tags">
+                <span class="tag">Timing Optimization</span>
+                <span class="tag">Market Connections</span>
+                <span class="tag">Post-Harvest Guidance</span>
+                <span class="tag">Additional Flushes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-step">
+            <div class="journey-time">
+              <div class="time-period">Day 46+</div>
+              <div class="time-label">Ongoing Growth</div>
+            </div>
+            <div class="journey-content">
+              <h3>Scale, Refer & Thrive</h3>
+              <p>
+                Loyalty discounts on reorders. Referral rewards — earn one free
+                tube for every farmer you bring in. Advanced techniques
+                training. Recognition in our Top Farmer program. Networking with
+                buyers and fellow farmers. Scaling consultation as your
+                operation grows.
+              </p>
+              <div class="journey-tags">
+                <span class="tag">Loyalty Discounts</span>
+                <span class="tag">Referral Rewards</span>
+                <span class="tag">Advanced Training</span>
+                <span class="tag">Top Farmer Awards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROI SECTION -->
+    <section class="roi-section">
+      <div class="container">
+        <div class="roi-grid">
+          <div class="roi-numbers reveal">
+            <div class="roi-num-card">
+              <div class="roi-big">2–3K</div>
+              <div class="roi-label">RWF per kg Market Price</div>
+            </div>
+            <div class="roi-num-card">
+              <div class="roi-big">1.5kg</div>
+              <div class="roi-label">Conservative Harvest</div>
+            </div>
+            <div class="roi-num-card">
+              <div class="roi-big">200%</div>
+              <div class="roi-label">Max ROI Achievable</div>
+            </div>
+            <div class="roi-num-card">
+              <div class="roi-big">3mo</div>
+              <div class="roi-label">Return Timeline</div>
+            </div>
+          </div>
+
+          <div class="roi-text">
+            <div
+              class="section-label reveal"
+              style="color: rgba(212, 202, 188, 0.6)"
+            >
+              The Numbers
+            </div>
+            <h2 class="section-title reveal">
+              Your investment,<br /><em>multiplied</em>
+            </h2>
+            <p class="reveal">
+              A single 600 RWF tube generates 1,000–2,000 RWF in revenue over
+              its 3-month lifecycle — a minimum 200% return before you even
+              factor in repeat flushes and scaling.
+            </p>
+            <p class="reveal">
+              Unlike most agricultural investments, mushroom farming with Miru
+              begins generating returns within 3–4 weeks of setup. Our
+              guaranteed &lt;3% contamination rate means your capital is
+              protected from the start.
+            </p>
+            <p class="reveal">
+              With our market access facilitation, you sell directly to
+              restaurants, markets, and buyers — no middlemen eating your
+              margin. We help you capture full market value for every harvest.
+            </p>
+            <a
+              href="#contact"
+              class="btn-primary reveal"
+              style="background: var(--gold); color: var(--earth)"
+              >Calculate Your Returns</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM SECTION -->
+    <section class="system-section">
+      <div class="container">
+        <div class="section-label reveal">The Miru System</div>
+        <h2 class="section-title reveal">
+          Our <em>operational excellence</em>
+        </h2>
+        <p
+          class="reveal"
+          style="
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.75;
+            max-width: 600px;
+          "
+        >
+          We apply systematic data-driven excellence to every function —
+          ensuring consistent quality, faster learning, and operational
+          standards that compound over time.
+        </p>
+
+        <div class="system-grid">
+          <div class="system-card reveal">
+            <div class="system-icon">🏭</div>
+            <div class="system-label">Our System</div>
+            <div class="system-title">Production Excellence</div>
+            <div class="system-body">
+              Every tube passes through a quality verification system ensuring
+              our &lt;3% contamination guarantee. Each agent specializes in a
+              critical control point, from substrate preparation to final
+              quality check.
+            </div>
+            <div class="agent-chips">
+              <span class="agent-chip">Planning</span>
+              <span class="agent-chip">Quality</span>
+              <span class="agent-chip">Production</span>
+              <span class="agent-chip">Testing</span>
+            </div>
+          </div>
+
+          <div class="system-card reveal">
+            <div class="system-icon">📣</div>
+            <div class="system-label">Digital System</div>
+            <div class="system-title">Marketing Engine</div>
+            <div class="system-body">
+              Our marketing system produces 196 content pieces in 6 months — 52
+              SEO blogs, 24 YouTube videos, 120 short-form videos — targeting
+              5,000+ monthly organic visitors and #1 keyword rankings.
+            </div>
+            <div class="agent-chips">
+              <span class="agent-chip">Strategy Agent</span>
+              <span class="agent-chip">Drafting Agent</span>
+              <span class="agent-chip">SEO Agent</span>
+              <span class="agent-chip">Style Agent</span>
+              <span class="agent-chip">Performance Agent</span>
+            </div>
+          </div>
+
+          <div class="system-card reveal">
+            <div class="system-icon">🤝</div>
+            <div class="system-label">Community System</div>
+            <div class="system-title">Farmer Network</div>
+            <div class="system-body">
+              WhatsApp cohort groups, monthly meetups, peer support, market
+              access facilitation, and a referral engine that turns every
+              successful farmer into 3–5 new customers. Community is our
+              compounding moat.
+            </div>
+            <div class="agent-chips">
+              <span class="agent-chip">Cohort Groups</span>
+              <span class="agent-chip">Peer Support</span>
+              <span class="agent-chip">Referral Program</span>
+              <span class="agent-chip">Market Access</span>
+            </div>
+          </div>
+
+          <div class="system-card reveal">
+            <div class="system-icon">📊</div>
+            <div class="system-label">Analytics System</div>
+            <div class="system-title">Data-Driven Operations</div>
+            <div class="system-body">
+              Daily performance tracking, weekly optimization reviews, monthly
+              strategic adjustments, and quarterly goal setting. Every farmer
+              outcome tracked, every marketing channel measured, every process
+              documented and improved.
+            </div>
+            <div class="agent-chips">
+              <span class="agent-chip">Daily Tracking</span>
+              <span class="agent-chip">Weekly Optimization</span>
+              <span class="agent-chip">Monthly Reports</span>
+              <span class="agent-chip">Quarterly Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROWTH -->
+    <section class="growth-section" id="growth">
+      <div class="container">
+        <div
+          class="section-label reveal"
+          style="color: rgba(212, 202, 188, 0.5)"
+        >
+          Strategic Roadmap
+        </div>
+        <h2 class="section-title reveal" style="color: var(--cream)">
+          The road to<br /><em>Rwanda's #1</em>
+        </h2>
+        <p
+          class="reveal"
+          style="
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(212, 202, 188, 0.7);
+            max-width: 600px;
+          "
+        >
+          Our growth model compounds through farmer success. Each milestone
+          unlocks the next — reducing acquisition costs, increasing referral
+          rates, and building the community moat that makes us unbeatable.
+        </p>
+
+        <div class="growth-milestones">
+          <div class="milestone reveal">
+            <div class="milestone-date">Month 6 · 2026</div>
+            <div class="milestone-farmers">150</div>
+            <div class="milestone-label">Active Farmers</div>
+            <div class="milestone-detail">
+              20,000 tubes/month · Profitable operations · 60% referral growth
+            </div>
+            <div class="milestone-bar" style="width: 8%"></div>
+          </div>
+          <div class="milestone reveal">
+            <div class="milestone-date">Year 1 · 2027</div>
+            <div class="milestone-farmers">300</div>
+            <div class="milestone-label">Active Farmers</div>
+            <div class="milestone-detail">
+              30,000 tubes/month · Established Kigali brand · 75% referral
+              growth
+            </div>
+            <div class="milestone-bar" style="width: 20%"></div>
+          </div>
+          <div class="milestone reveal">
+            <div class="milestone-date">Year 2 · 2028</div>
+            <div class="milestone-farmers">400</div>
+            <div class="milestone-label">Active Farmers</div>
+            <div class="milestone-detail">
+              50,000 tubes/month · Kigali market leader · 85% referral growth
+            </div>
+            <div class="milestone-bar" style="width: 45%"></div>
+          </div>
+          <div class="milestone reveal">
+            <div class="milestone-date">Year 3 · 2029</div>
+            <div class="milestone-farmers">900</div>
+            <div class="milestone-label">Active Farmers</div>
+            <div class="milestone-detail">
+              70,000 tubes/month · #1 in Rwanda · 90% referral growth
+            </div>
+            <div class="milestone-bar" style="width: 75%"></div>
+          </div>
+          <div class="milestone reveal">
+            <div class="milestone-date">Year 5 · 2030</div>
+            <div class="milestone-farmers">3,200</div>
+            <div class="milestone-label">Active Farmers</div>
+            <div class="milestone-detail">
+              100,000 tubes/month · Regional expansion ready · Mission achieved
+            </div>
+            <div class="milestone-bar" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-label reveal">Farmer Stories</div>
+        <h2 class="section-title reveal">
+          Success is our<br /><em>best marketing</em>
+        </h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-quote">
+              "I was skeptical at first — other suppliers left me to figure
+              things out alone. With Miru, I had someone checking in daily. My
+              first harvest was 2kg from per tube. I immediately ordered 1000
+              more."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Agathe M.</div>
+              <div class="author-detail">Gisozi District · 15 tubes active</div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-quote">
+              "The WhatsApp group alone is worth the investment. When I had a
+              contamination scare at week 2, someone helped me within the hour.
+              They replaced the tube, no questions. This company cares."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Emmanuel K.</div>
+              <div class="author-detail">
+                Nyarugenge · 8 tubes · Referred 4 farmers
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-quote">
+              "I sold my first harvest directly to two restaurants through
+              Miru's market connections. I made 48,000 RWF in 3 months on 10
+              tubes. My next order is 30 tubes. The ROI is real."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Clarisse U.</div>
+              <div class="author-detail">
+                Kicukiro · Top Farmer Award Q1 2026
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="contact">
+      <div class="container" style="position: relative; z-index: 1">
+        <div class="badge reveal">Start Your Journey</div>
+        <h2 class="section-title reveal">
+          Ready to become a<br /><em>successful farmer?</em>
+        </h2>
+        <p class="reveal">
+          Your first tube is the beginning of a partnership. We guide every step
+          — from setup to harvest to market. Join 50+ farmers already thriving
+          with Miru.
+        </p>
+        <div class="cta-buttons reveal">
+          <a
+            href="https://wa.me/250796600706?text=Hello%20Miru%20Mushrooms!%20I%20want%20to%20start%20farming."
+            class="btn-primary"
+            style="background: var(--gold); color: var(--earth)"
+          >
+            📱 WhatsApp Us Now
+          </a>
+          <a
+            href="/cdn-cgi/l/email-protection#3b52555d547b5652494e564e4853495454564815585456"
+            class="btn-ghost"
+            style="color: var(--cream); border-color: rgba(250, 247, 242, 0.4)"
+            ><span
+              class="__cf_email__"
+              data-cfemail="4e272028210e23273c3b233b3d263c2121233d602d2123"
+              >mirumushrooms@gmail.com</span
+            ></a
+          >
+        </div>
+
+        <div
+          style="
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+          class="reveal"
+        >
+          <div style="text-align: center">
+            <div
+              style="
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: var(--gold);
+              "
+            >
+              Free
+            </div>
+            <div
+              style="
+                font-family: 'DM Mono', monospace;
+                font-size: 0.6rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                opacity: 0.6;
+                margin-top: 0.3rem;
+              "
+            >
+              First Consultation
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div
+              style="
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: var(--gold);
+              "
+            >
+              24hr
+            </div>
+            <div
+              style="
+                font-family: 'DM Mono', monospace;
+                font-size: 0.6rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                opacity: 0.6;
+                margin-top: 0.3rem;
+              "
+            >
+              Support Response
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div
+              style="
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: var(--gold);
+              "
+            >
+              100%
+            </div>
+            <div
+              style="
+                font-family: 'DM Mono', monospace;
+                font-size: 0.6rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                opacity: 0.6;
+                margin-top: 0.3rem;
+              "
+            >
+              Colonization Guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">Miru Mushrooms</div>
+            <p>
+              Creating 10,000 successful mushroom farmers across Rwanda by 2030.
+              Proving that profit and purpose are inseparable.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li>
+                <a href="#products">Cottonseed Hull Substrate (500 RWF/kg)</a>
+              </li>
+              <li><a href="#products">Oyster Mushroom Tubes (600 RWF)</a></li>
+              <li>
+                <a href="#products">Fresh Oyster Mushrooms (3,000 RWF/kg)</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Farmer Resources</h4>
+            <ul>
+              <li><a href="#">Growing Guide</a></li>
+              <li><a href="#">ROI Calculator</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">WhatsApp Community</a></li>
+              <li><a href="#">Market Connections</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">Our Philosophy</a></li>
+              <li><a href="#growth">Growth Roadmap</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Blog & Education</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Miru Mushrooms Ltd · All rights reserved</p>
+          <p>
+            Built by
+            <a
+              href="https://www.linkedin.com/in/musangamfurae/"
+              target="_blank"
+              style="color: beige"
+              >Emmanauel</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a
+      href="https://wa.me/250796600706?text=Hello%20Miru%20Mushrooms!%20I%27m%20interested%20in%20starting%20mushroom%20farming."
+      class="whatsapp-fab"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
