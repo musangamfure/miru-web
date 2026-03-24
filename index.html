@@ -1677,6 +1677,278 @@
           gap: 1.5rem;
         }
       }
+
+      /* ── SOCIAL LINKS ── */
+      .footer-socials {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+      }
+      .social-link {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid rgba(212, 202, 188, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cream);
+        opacity: 0.5;
+        transition: opacity 0.2s, border-color 0.2s, background 0.2s;
+        flex-shrink: 0;
+      }
+      .social-link:hover {
+        opacity: 1;
+        border-color: var(--gold);
+        background: rgba(200, 169, 110, 0.12);
+      }
+      .social-link svg {
+        width: 15px;
+        height: 15px;
+        display: block;
+      }
+
+      /* ── CONTACT LAYOUT ── */
+      .contact-layout {
+        margin-top: 3.5rem;
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 4rem;
+        align-items: start;
+      }
+      .contact-form-label {
+        font-family: "DM Mono", monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 1.75rem;
+        opacity: 0.8;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+      }
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+      .form-field label {
+        font-family: "Syne", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(212, 202, 188, 0.7);
+      }
+      .form-field input,
+      .form-field select,
+      .form-field textarea {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(212, 202, 188, 0.2);
+        color: var(--cream);
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        outline: none;
+        transition: border-color 0.2s, background 0.2s;
+        width: 100%;
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 0;
+      }
+      .form-field select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c8a96e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        padding-right: 2.5rem;
+        cursor: pointer;
+      }
+      .form-field select option {
+        background: var(--charcoal);
+        color: var(--cream);
+      }
+      .form-field input::placeholder,
+      .form-field textarea::placeholder {
+        color: rgba(212, 202, 188, 0.3);
+        font-style: italic;
+      }
+      .form-field input:focus,
+      .form-field select:focus,
+      .form-field textarea:focus {
+        border-color: var(--gold);
+        background: rgba(200, 169, 110, 0.06);
+      }
+      .form-field textarea {
+        resize: vertical;
+        min-height: 110px;
+        line-height: 1.6;
+      }
+      .form-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        background: var(--gold);
+        color: var(--earth);
+        border: none;
+        padding: 1rem 2rem;
+        font-family: "Syne", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.25s, transform 0.2s;
+        width: 100%;
+        margin-top: 0.25rem;
+      }
+      .form-submit:hover {
+        background: var(--cream);
+        transform: translateY(-2px);
+      }
+      .submit-arrow {
+        transition: transform 0.2s;
+        font-size: 1rem;
+      }
+      .form-submit:hover .submit-arrow {
+        transform: translateX(4px);
+      }
+      .form-note {
+        font-size: 0.82rem;
+        opacity: 0.45;
+        text-align: center;
+        color: var(--cream);
+        margin-top: 0.25rem;
+      }
+      .form-note a {
+        color: var(--gold);
+        text-decoration: none;
+        opacity: 1;
+      }
+      .form-success {
+        display: none;
+        text-align: center;
+        padding: 3rem 2rem;
+        border: 1px solid rgba(200, 169, 110, 0.3);
+      }
+      .form-success.visible {
+        display: block;
+      }
+      .success-icon {
+        font-size: 2.5rem;
+        color: var(--gold);
+        margin-bottom: 1rem;
+      }
+      .success-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: var(--cream);
+        margin-bottom: 0.75rem;
+      }
+      .success-body {
+        font-size: 0.95rem;
+        opacity: 0.6;
+        line-height: 1.7;
+        color: var(--cream);
+      }
+
+      /* Right column stats */
+      .contact-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border: 1px solid rgba(212, 202, 188, 0.15);
+      }
+      .cstat {
+        padding: 1.75rem 2rem;
+        border-bottom: 1px solid rgba(212, 202, 188, 0.1);
+      }
+      .cstat:last-child {
+        border-bottom: none;
+      }
+      .cstat-num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: var(--gold);
+        line-height: 1;
+        margin-bottom: 0.3rem;
+      }
+      .cstat-label {
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        opacity: 0.5;
+        color: var(--cream);
+      }
+      .cstat-wa {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #25d366;
+        padding: 1.5rem 2rem;
+      }
+      .cstat-wa svg {
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+      }
+      .cstat-wa span {
+        font-family: "DM Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 968px) {
+        .contact-layout {
+          grid-template-columns: 1fr;
+          gap: 2.5rem;
+        }
+        .contact-stats {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .contact-stats .cstat-wa {
+          grid-column: 1 / -1;
+        }
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 500px) {
+        .contact-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .nav-links.mobile-open {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--cream);
+        padding: 1.5rem 2rem;
+        gap: 1.25rem;
+        border-bottom: 1px solid var(--mist);
+        z-index: 99;
+      }
+      .nav-links.mobile-open li a {
+        font-size: 0.9rem;
+        color: var(--earth);
+        opacity: 0.85;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap"
@@ -1690,12 +1962,12 @@
         <div class="logo-mark">🍄</div>
         Miru
       </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#support">Support</a></li>
-        <li><a href="#growth">Growth</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-item-link">About</a></li>
+        <li><a href="#products" class="nav-item-link">Products</a></li>
+        <li><a href="#support" class="nav-item-link">Support</a></li>
+        <li><a href="#growth" class="nav-item-link">Growth</a></li>
+        <li><a href="#contact" class="nav-item-link">Contact</a></li>
       </ul>
       <a href="#contact" class="nav-cta">Start Farming</a>
       <button class="menu-toggle" onclick="toggleMenu()">
@@ -2170,8 +2442,6 @@
               <li>Low contamination risk — clean & consistent</li>
               <li>Suitable for home & commercial growers</li>
               <li>Available in 50 kg bags</li>
-              <li>Substrate mixing guidance provided</li>
-              <li>WhatsApp support included</li>
             </ul>
             <a
               href="#contact"
@@ -2693,93 +2963,116 @@
             ><span
               class="__cf_email__"
               data-cfemail="4e272028210e23273c3b233b3d263c2121233d602d2123"
-              >mirumushrooms@gmail.com</span
+              ><span
+                class="__cf_email__"
+                data-cfemail="bcd1d5cec9d1c9cfd4ced3d3d1cffcdbd1ddd5d092dfd3d1"
+                >[email&#160;protected]</span
+              ></span
             ></a
           >
         </div>
 
-        <div
-          style="
-            margin-top: 5rem;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-          "
-          class="reveal"
-        >
-          <div style="text-align: center">
-            <div
-              style="
-                font-family: 'Cormorant Garamond', serif;
-                font-size: 2.5rem;
-                font-weight: 300;
-                color: var(--gold);
-              "
-            >
-              Free
-            </div>
-            <div
-              style="
-                font-family: 'DM Mono', monospace;
-                font-size: 0.6rem;
-                letter-spacing: 0.12em;
-                text-transform: uppercase;
-                opacity: 0.6;
-                margin-top: 0.3rem;
-              "
-            >
-              First Consultation
+        <!-- CONTACT FORM + STATS GRID -->
+        <div class="contact-layout reveal">
+          <!-- Left: form -->
+          <div class="contact-form-wrap">
+            <div class="contact-form-label">Send us a message</div>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="cf-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="cf-name"
+                    name="name"
+                    placeholder="Amina Uwase"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="cf-phone">Phone / WhatsApp</label>
+                  <input
+                    type="tel"
+                    id="cf-phone"
+                    name="phone"
+                    placeholder="+250 7XX XXX XXX"
+                  />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email Address</label>
+                <input
+                  type="email"
+                  id="cf-email"
+                  name="email"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-field">
+                <label for="cf-interest">I'm interested in</label>
+                <select id="cf-interest" name="interest">
+                  <option value="">— Select an option —</option>
+                  <option value="tubes">Ordering Mushroom Tubes</option>
+                  <option value="substrate">Buying Cottonseed Substrate</option>
+                  <option value="mushrooms">
+                    Buying Fresh Oyster Mushrooms
+                  </option>
+                  <option value="question">General Question</option>
+                  <option value="partnership">Partnership / Bulk Order</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="cf-message">Your Message</label>
+                <textarea
+                  id="cf-message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us what you need — we reply within 24 hours."
+                ></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <span class="submit-text">Send Message</span>
+                <span class="submit-arrow">→</span>
+              </button>
+              <p class="form-note">
+                Or reach us directly on
+                <a href="https://wa.me/250796600706" target="_blank"
+                  >WhatsApp</a
+                >
+                — we're usually faster there.
+              </p>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">✓</div>
+              <div class="success-title">Message received!</div>
+              <div class="success-body">
+                We'll get back to you within 24 hours. Meanwhile, feel free to
+                reach us on WhatsApp.
+              </div>
             </div>
           </div>
-          <div style="text-align: center">
-            <div
-              style="
-                font-family: 'Cormorant Garamond', serif;
-                font-size: 2.5rem;
-                font-weight: 300;
-                color: var(--gold);
-              "
-            >
-              24hr
+
+          <!-- Right: quick stats -->
+          <div class="contact-stats">
+            <div class="cstat">
+              <div class="cstat-num">Free</div>
+              <div class="cstat-label">First Consultation</div>
             </div>
-            <div
-              style="
-                font-family: 'DM Mono', monospace;
-                font-size: 0.6rem;
-                letter-spacing: 0.12em;
-                text-transform: uppercase;
-                opacity: 0.6;
-                margin-top: 0.3rem;
-              "
-            >
-              Support Response
+            <div class="cstat">
+              <div class="cstat-num">24hr</div>
+              <div class="cstat-label">Response Time</div>
             </div>
-          </div>
-          <div style="text-align: center">
-            <div
-              style="
-                font-family: 'Cormorant Garamond', serif;
-                font-size: 2.5rem;
-                font-weight: 300;
-                color: var(--gold);
-              "
-            >
-              100%
+            <div class="cstat">
+              <div class="cstat-num">100%</div>
+              <div class="cstat-label">Colonization Guarantee</div>
             </div>
-            <div
-              style="
-                font-family: 'DM Mono', monospace;
-                font-size: 0.6rem;
-                letter-spacing: 0.12em;
-                text-transform: uppercase;
-                opacity: 0.6;
-                margin-top: 0.3rem;
-              "
-            >
-              Colonization Guarantee
+            <div class="cstat cstat-wa">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <span>+250 796 600 706</span>
             </div>
           </div>
         </div>
@@ -2796,6 +3089,60 @@
               Creating 10,000 successful mushroom farmers across Rwanda by 2030.
               Proving that profit and purpose are inseparable.
             </p>
+            <div class="footer-socials">
+              <a
+                href="https://tiktok.com/@mirumushrooms"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.16 8.16 0 004.77 1.52V6.83a4.85 4.85 0 01-1-.14z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com/mirumushrooms"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com/mirumushrooms"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com/@mirumushrooms"
+                target="_blank"
+                rel="noopener"
+                aria-label="YouTube"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div class="footer-col">
@@ -2867,6 +3214,10 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
     <script>
       // Nav scroll effect
       const nav = document.getElementById("nav");
@@ -2902,18 +3253,37 @@
       });
 
       // Mobile menu
-      function toggleMenu() {
-        const links = document.querySelector(".nav-links");
-        const cta = document.querySelector("nav .nav-cta");
-        if (links.style.display === "flex") {
-          links.style.display = "none";
-          if (cta) cta.style.display = "none";
+      function toggleMenu(open) {
+        var links = document.getElementById("navLinks");
+        var cta = document.querySelector("nav .nav-cta");
+        var isOpen = links.classList.contains("mobile-open");
+        if (open === false || isOpen) {
+          links.classList.remove("mobile-open");
+          if (cta) cta.style.display = "";
         } else {
-          links.style.cssText =
-            "display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:2rem;gap:1.5rem;border-bottom:1px solid var(--mist);";
-          if (cta) cta.style.display = "block";
+          links.classList.add("mobile-open");
+          if (cta) {
+            cta.style.display = "block";
+            cta.style.marginTop = "0.5rem";
+          }
         }
       }
+
+      // Close mobile nav on link click and navigate
+      document.querySelectorAll(".nav-item-link").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          var href = this.getAttribute("href");
+          if (href && href.startsWith("#")) {
+            e.preventDefault();
+            toggleMenu(false);
+            setTimeout(function () {
+              var target = document.querySelector(href);
+              if (target)
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 180);
+          }
+        });
+      });
 
       // Milestone bar animation.
       const milestoneObserver = new IntersectionObserver(
