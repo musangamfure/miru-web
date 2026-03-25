@@ -9,16 +9,25 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       :root {
-        --cream: #f5efe0;
-        --warm-white: #faf7f2;
-        --earth: #3d2b1f;
-        --mushroom: #8b6b4a;
-        --sage: #6b7c5c;
-        --moss: #4a5e3a;
-        --gold: #c8a96e;
-        --terracotta: #b5622a;
-        --mist: #d4cabc;
-        --charcoal: #2a2218;
+        /* ── Brand greens (from Miru Farm logo) ── */
+        --forest: #3d6130; /* hero bg, dark sections, nav CTA */
+        --emerald: #2da271; /* primary CTA, positive states, links */
+        --olive: #94a466; /* mid-tone accent, borders, labels */
+        --lime: #b9d544; /* em text, highlights, active dots */
+
+        /* ── Neutrals & warmth (retained + improved) ── */
+        --cream: #f5efe0; /* warm off-white panel bg */
+        --warm-white: #faf7f2; /* page background */
+        --earth: #1e1a14; /* body text (improved contrast ~14:1 on cream) */
+        --gold: #c8a96e; /* prices, numbers, premium accents */
+        --mist: #d4cabc; /* subtle borders, dividers */
+        --charcoal: #1a1f14; /* footer bg (deep forest-dark) */
+        --terracotta: #b5622a; /* error / negative states only */
+
+        /* ── Backwards-compat aliases ── */
+        --mushroom: #94a466; /* → olive */
+        --sage: #3d6130; /* → forest */
+        --moss: #2da271; /* → emerald */
       }
 
       * {
@@ -86,7 +95,7 @@
       .nav-logo .logo-mark {
         width: 32px;
         height: 32px;
-        background: var(--moss);
+        background: var(--emerald);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -123,7 +132,7 @@
         font-weight: 600;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        background: var(--earth);
+        background: var(--forest);
         color: var(--cream);
         border: none;
         padding: 0.75rem 1.75rem;
@@ -134,7 +143,7 @@
       }
 
       .nav-cta:hover {
-        background: var(--moss);
+        background: var(--emerald);
         transform: translateY(-1px);
       }
 
@@ -149,7 +158,7 @@
       }
 
       .hero-left {
-        background: var(--earth);
+        background: var(--forest);
         display: flex;
         height: 100%;
         flex-direction: column;
@@ -168,7 +177,7 @@
         height: 500px;
         background: radial-gradient(
           circle,
-          rgba(107, 124, 92, 0.3) 0%,
+          rgba(45, 162, 113, 0.25) 0%,
           transparent 70%
         );
         pointer-events: none;
@@ -198,7 +207,7 @@
 
       .hero-title em {
         font-style: italic;
-        color: var(--gold);
+        color: var(--lime);
       }
 
       .hero-sub {
@@ -226,8 +235,8 @@
         font-weight: 600;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        background: var(--gold);
-        color: var(--earth);
+        background: var(--emerald);
+        color: var(--cream);
         border: none;
         padding: 1rem 2.5rem;
         cursor: pointer;
@@ -237,9 +246,10 @@
       }
 
       .btn-primary:hover {
-        background: var(--cream);
+        background: var(--forest);
+        color: var(--lime);
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 28px rgba(61, 97, 48, 0.35);
       }
 
       .btn-ghost {
@@ -417,7 +427,7 @@
       }
 
       .carousel-dot.active {
-        background: var(--gold);
+        background: var(--lime);
         transform: scale(1.4);
       }
 
@@ -454,7 +464,7 @@
 
       /* TICKER */
       .ticker {
-        background: var(--moss);
+        background: var(--emerald);
         padding: 0.75rem 0;
         overflow: hidden;
         position: relative;
@@ -512,7 +522,7 @@
         font-size: 0.65rem;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        color: var(--mushroom);
+        color: var(--olive);
         margin-bottom: 1.5rem;
         display: flex;
         align-items: center;
@@ -523,7 +533,7 @@
         content: "";
         width: 2rem;
         height: 1px;
-        background: var(--mushroom);
+        background: var(--olive);
         display: block;
       }
 
@@ -544,12 +554,12 @@
 
       .roi-section .section-title em {
         font-style: italic;
-        color: var(--gold);
+        color: var(--lime);
       }
 
       .section-title em {
         font-style: italic;
-        color: var(--mushroom);
+        color: var(--emerald);
       }
 
       /* PHILOSOPHY SECTION */
@@ -574,7 +584,7 @@
       }
 
       .pull-quote {
-        border-left: 3px solid var(--gold);
+        border-left: 3px solid var(--emerald);
         padding-left: 2rem;
         margin: 3rem 0;
         font-size: 1.5rem;
@@ -591,7 +601,7 @@
 
       .philosophy-card {
         position: absolute;
-        background: var(--earth);
+        background: var(--forest);
         color: var(--cream);
         padding: 3rem;
         width: 300px;
@@ -658,7 +668,7 @@
 
       /* PROBLEM/SOLUTION */
       .cycle-section {
-        background: var(--earth);
+        background: var(--charcoal);
         color: var(--cream);
         overflow: hidden;
       }
@@ -691,7 +701,7 @@
 
       .cycle-block.good .cycle-header {
         background: rgba(74, 94, 58, 0.3);
-        color: #8fcb6a;
+        color: var(--lime);
       }
 
       .cycle-steps {
@@ -831,7 +841,7 @@
       }
 
       .pricing-card.featured {
-        background: var(--earth);
+        background: var(--forest);
         color: var(--cream);
       }
 
@@ -893,7 +903,7 @@
 
       /* ROI SECTION */
       .roi-section {
-        background: var(--sage);
+        background: var(--forest);
         color: var(--cream);
         overflow: hidden;
         position: relative;
@@ -1203,46 +1213,33 @@
 
       /* CTA */
       .final-cta {
-        background: var(--moss);
-        color: var(--cream);
+        background: var(--warm-white);
+        color: var(--earth);
         padding: 8rem 0;
-        text-align: center;
         position: relative;
         overflow: hidden;
       }
 
-      .final-cta::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: repeating-linear-gradient(
-          45deg,
-          transparent,
-          transparent 60px,
-          rgba(255, 255, 255, 0.02) 60px,
-          rgba(255, 255, 255, 0.02) 61px
-        );
+      .final-cta .badge {
+        color: var(--emerald);
+        border-color: rgba(45, 162, 113, 0.35);
+        background: rgba(45, 162, 113, 0.08);
       }
-
       .final-cta .section-title {
-        color: var(--cream);
-        font-size: clamp(3rem, 5vw, 5rem);
+        color: var(--earth);
+        font-size: clamp(2.5rem, 4vw, 4rem);
         margin-bottom: 1.5rem;
       }
-
-      .final-cta p {
-        font-size: 1.2rem;
-        opacity: 0.8;
-        max-width: 500px;
-        margin: 0 auto 3rem;
-        line-height: 1.7;
+      .final-cta .section-title em {
+        color: var(--emerald);
       }
-
-      .cta-buttons {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-        align-items: center;
+      .final-cta > .container > p {
+        color: var(--earth);
+        opacity: 0.65;
+        max-width: 520px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 0;
       }
 
       /* FOOTER */
@@ -1282,7 +1279,7 @@
         font-weight: 600;
         letter-spacing: 0.15em;
         text-transform: uppercase;
-        color: var(--gold);
+        color: var(--lime);
         margin-bottom: 1.5rem;
       }
 
@@ -1381,7 +1378,7 @@
 
         .nav-links,
         .nav-cta {
-          display: none;
+          display: none !important;
         }
         .menu-toggle {
           display: flex;
@@ -1512,9 +1509,9 @@
         font-size: 0.6rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        background: rgba(200, 169, 110, 0.2);
-        color: var(--gold);
-        border: 1px solid rgba(200, 169, 110, 0.4);
+        background: rgba(45, 162, 113, 0.15);
+        color: var(--emerald);
+        border: 1px solid rgba(45, 162, 113, 0.35);
         padding: 0.3rem 0.8rem;
         display: inline-block;
         margin-bottom: 1rem;
@@ -1545,7 +1542,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: var(--earth);
+        background: var(--forest);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease;
@@ -1615,14 +1612,14 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         padding: 0.35rem 0.7rem;
-        background: rgba(200, 169, 110, 0.15);
-        color: var(--gold);
+        background: rgba(148, 164, 102, 0.18);
+        color: var(--olive);
         border-radius: 2px;
         transition: all 0.3s;
       }
 
       .system-card:hover .agent-chip {
-        background: rgba(200, 169, 110, 0.25);
+        background: rgba(148, 164, 102, 0.3);
       }
 
       /* ROI CALLOUT */
@@ -1720,87 +1717,149 @@
         display: block;
       }
 
+      /* ── CONTACT INFO (left col) ── */
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding-top: 0.5rem;
+      }
+      .contact-info-block {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      .ci-label {
+        font-family: "DM Mono", monospace;
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--olive);
+        margin-bottom: 0.2rem;
+      }
+      .ci-value {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--earth);
+        line-height: 1.3;
+        text-decoration: none;
+      }
+      a.ci-value:hover {
+        color: var(--emerald);
+      }
+      .ci-sub {
+        font-size: 0.9rem;
+        color: var(--earth);
+        opacity: 0.5;
+      }
+      .ci-wa-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-top: 0.75rem;
+        background: #25d366;
+        color: #fff;
+        font-family: "Syne", sans-serif;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.75rem 1.4rem;
+        transition: background 0.2s, transform 0.2s;
+        align-self: flex-start;
+      }
+      .ci-wa-btn:hover {
+        background: #1ebe5c;
+        transform: translateY(-2px);
+      }
+
       /* ── CONTACT LAYOUT ── */
       .contact-layout {
         margin-top: 3.5rem;
         display: grid;
-        grid-template-columns: 1fr 320px;
-        gap: 4rem;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 5rem;
         align-items: start;
       }
+
+      /* ── CONTACT FORM (right col) ── */
       .contact-form-label {
         font-family: "DM Mono", monospace;
         font-size: 0.65rem;
         letter-spacing: 0.18em;
         text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 1.75rem;
-        opacity: 0.8;
+        color: var(--emerald);
+        margin-bottom: 1.5rem;
       }
       .contact-form {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 1.1rem;
       }
       .form-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.25rem;
+        gap: 1.1rem;
       }
       .form-field {
         display: flex;
         flex-direction: column;
-        gap: 0.45rem;
+        gap: 0.4rem;
       }
       .form-field label {
         font-family: "Syne", sans-serif;
-        font-size: 0.7rem;
+        font-size: 0.68rem;
         font-weight: 600;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: rgba(212, 202, 188, 0.7);
+        color: var(--earth);
+        opacity: 0.65;
       }
       .form-field input,
       .form-field select,
       .form-field textarea {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(212, 202, 188, 0.2);
-        color: var(--cream);
+        background: transparent;
+        border: 1px solid #2da271;
+        color: var(--earth);
         font-family: "Cormorant Garamond", serif;
         font-size: 1rem;
-        padding: 0.75rem 1rem;
+        padding: 0.7rem 0.9rem;
         outline: none;
-        transition: border-color 0.2s, background 0.2s;
+        transition: border-color 0.2s, box-shadow 0.2s;
         width: 100%;
         appearance: none;
         -webkit-appearance: none;
         border-radius: 0;
       }
       .form-field select {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c8a96e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232da271' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
-        background-position: right 1rem center;
-        padding-right: 2.5rem;
+        background-position: right 0.9rem center;
+        background-color: transparent;
+        padding-right: 2.2rem;
         cursor: pointer;
       }
       .form-field select option {
-        background: var(--charcoal);
-        color: var(--cream);
+        background: var(--warm-white);
+        color: var(--earth);
       }
       .form-field input::placeholder,
       .form-field textarea::placeholder {
-        color: rgba(212, 202, 188, 0.3);
+        color: #94a466;
+        opacity: 0.8;
         font-style: italic;
       }
       .form-field input:focus,
       .form-field select:focus,
       .form-field textarea:focus {
-        border-color: var(--gold);
-        background: rgba(200, 169, 110, 0.06);
+        border-color: var(--emerald);
+        box-shadow: 0 0 0 3px rgba(45, 162, 113, 0.1);
       }
       .form-field textarea {
         resize: vertical;
-        min-height: 110px;
+        min-height: 100px;
         line-height: 1.6;
       }
       .form-submit {
@@ -1808,10 +1867,10 @@
         align-items: center;
         justify-content: center;
         gap: 0.75rem;
-        background: var(--gold);
-        color: var(--earth);
+        background: var(--emerald);
+        color: var(--cream);
         border: none;
-        padding: 1rem 2rem;
+        padding: 0.95rem 2rem;
         font-family: "Syne", sans-serif;
         font-size: 0.75rem;
         font-weight: 700;
@@ -1823,102 +1882,41 @@
         margin-top: 0.25rem;
       }
       .form-submit:hover {
-        background: var(--cream);
+        background: var(--forest);
         transform: translateY(-2px);
       }
       .submit-arrow {
         transition: transform 0.2s;
-        font-size: 1rem;
       }
       .form-submit:hover .submit-arrow {
         transform: translateX(4px);
-      }
-      .form-note {
-        font-size: 0.82rem;
-        opacity: 0.45;
-        text-align: center;
-        color: var(--cream);
-        margin-top: 0.25rem;
-      }
-      .form-note a {
-        color: var(--gold);
-        text-decoration: none;
-        opacity: 1;
       }
       .form-success {
         display: none;
         text-align: center;
         padding: 3rem 2rem;
-        border: 1px solid rgba(200, 169, 110, 0.3);
+        border: 1px solid rgba(45, 162, 113, 0.3);
       }
       .form-success.visible {
         display: block;
       }
       .success-icon {
         font-size: 2.5rem;
-        color: var(--gold);
+        color: var(--emerald);
         margin-bottom: 1rem;
       }
       .success-title {
         font-family: "Cormorant Garamond", serif;
         font-size: 1.8rem;
         font-weight: 300;
-        color: var(--cream);
+        color: var(--earth);
         margin-bottom: 0.75rem;
       }
       .success-body {
         font-size: 0.95rem;
         opacity: 0.6;
         line-height: 1.7;
-        color: var(--cream);
-      }
-
-      /* Right column stats */
-      .contact-stats {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        border: 1px solid rgba(212, 202, 188, 0.15);
-      }
-      .cstat {
-        padding: 1.75rem 2rem;
-        border-bottom: 1px solid rgba(212, 202, 188, 0.1);
-      }
-      .cstat:last-child {
-        border-bottom: none;
-      }
-      .cstat-num {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 2.4rem;
-        font-weight: 300;
-        color: var(--gold);
-        line-height: 1;
-        margin-bottom: 0.3rem;
-      }
-      .cstat-label {
-        font-family: "DM Mono", monospace;
-        font-size: 0.58rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        opacity: 0.5;
-        color: var(--cream);
-      }
-      .cstat-wa {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        color: #25d366;
-        padding: 1.5rem 2rem;
-      }
-      .cstat-wa svg {
-        width: 22px;
-        height: 22px;
-        flex-shrink: 0;
-      }
-      .cstat-wa span {
-        font-family: "DM Mono", monospace;
-        font-size: 0.7rem;
-        letter-spacing: 0.08em;
+        color: var(--earth);
       }
 
       @media (max-width: 968px) {
@@ -1926,19 +1924,7 @@
           grid-template-columns: 1fr;
           gap: 2.5rem;
         }
-        .contact-stats {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-        .contact-stats .cstat-wa {
-          grid-column: 1 / -1;
-        }
         .form-row {
-          grid-template-columns: 1fr;
-        }
-      }
-      @media (max-width: 500px) {
-        .contact-stats {
           grid-template-columns: 1fr;
         }
       }
@@ -2343,7 +2329,7 @@
                 margin-top: 2rem;
                 padding: 1.5rem;
                 background: rgba(74, 94, 58, 0.3);
-                border-left: 3px solid #8fcb6a;
+                border-left: 3px solid var(--lime);
               "
             >
               <div
@@ -2352,7 +2338,7 @@
                   font-size: 0.6rem;
                   letter-spacing: 0.12em;
                   text-transform: uppercase;
-                  color: #8fcb6a;
+                  color: var(--lime);
                   margin-bottom: 0.5rem;
                 "
               >
@@ -2712,7 +2698,7 @@
             <a
               href="#contact"
               class="btn-primary reveal"
-              style="background: var(--gold); color: var(--earth)"
+              style="background: var(--emerald); color: var(--cream)"
               >Calculate Your Returns</a
             >
           </div>
@@ -2948,42 +2934,58 @@
     <!-- FINAL CTA -->
     <section class="final-cta" id="contact">
       <div class="container" style="position: relative; z-index: 1">
-        <div class="badge reveal">Start Your Journey</div>
+        <div class="badge reveal">Get in Touch</div>
         <h2 class="section-title reveal">
-          Ready to become a<br /><em>successful farmer?</em>
+          Ready to start<br /><em>your journey?</em>
         </h2>
         <p class="reveal">
           Your first tube is the beginning of a partnership. We guide every step
-          — from setup to harvest to market. Join 50+ farmers already thriving
-          with Miru.
+          — from setup to harvest to market. Reach out and we'll get back to you
+          within 24 hours.
         </p>
-        <div class="cta-buttons reveal">
-          <a
-            href="https://wa.me/250796600706?text=Hello%20Miru%20Mushrooms!%20I%20want%20to%20start%20farming."
-            class="btn-primary"
-            style="background: var(--gold); color: var(--earth)"
-          >
-            📱 WhatsApp Us Now
-          </a>
-          <a
-            href="/cdn-cgi/l/email-protection#3b52555d547b5652494e564e4853495454564815585456"
-            class="btn-ghost"
-            style="color: var(--cream); border-color: rgba(250, 247, 242, 0.4)"
-            ><span
-              class="__cf_email__"
-              data-cfemail="4e272028210e23273c3b233b3d263c2121233d602d2123"
-              ><span
-                class="__cf_email__"
-                data-cfemail="bcd1d5cec9d1c9cfd4ced3d3d1cffcdbd1ddd5d092dfd3d1"
-                >[email&#160;protected]</span
-              ></span
-            ></a
-          >
-        </div>
 
-        <!-- CONTACT FORM + STATS GRID -->
+        <!-- CONTACT GRID -->
         <div class="contact-layout reveal">
-          <!-- Left: form -->
+          <!-- Left: contact info -->
+          <div class="contact-info">
+            <div class="contact-info-block">
+              <div class="ci-label">Phone &amp; WhatsApp</div>
+              <div class="ci-value">+250 796 600 706</div>
+              <a
+                href="https://wa.me/250796600706?text=Hello%20Miru%20Mushrooms!%20I%20want%20to%20start%20farming."
+                class="ci-wa-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="17"
+                  height="17"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Message us on WhatsApp
+              </a>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="ci-label">Email</div>
+              <a href="mailto:mirumushrooms@gmail.com" class="ci-value ci-link"
+                >mirumushrooms@gmail.com</a
+              >
+            </div>
+
+            <div class="contact-info-block">
+              <div class="ci-label">Location</div>
+              <div class="ci-value">Nyarugenge, Nyakabanda</div>
+              <div class="ci-sub">Kigali, Rwanda</div>
+            </div>
+          </div>
+
+          <!-- Right: form -->
           <div class="contact-form-wrap">
             <div class="contact-form-label">Send us a message</div>
             <form class="contact-form" id="contactForm" novalidate>
@@ -3043,13 +3045,6 @@
                 <span class="submit-text">Send Message</span>
                 <span class="submit-arrow">→</span>
               </button>
-              <p class="form-note">
-                Or reach us directly on
-                <a href="https://wa.me/250796600706" target="_blank"
-                  >WhatsApp</a
-                >
-                — we're usually faster there.
-              </p>
             </form>
             <div class="form-success" id="formSuccess">
               <div class="success-icon">✓</div>
@@ -3058,30 +3053,6 @@
                 We'll get back to you within 24 hours. Meanwhile, feel free to
                 reach us on WhatsApp.
               </div>
-            </div>
-          </div>
-
-          <!-- Right: quick stats -->
-          <div class="contact-stats">
-            <div class="cstat">
-              <div class="cstat-num">Free</div>
-              <div class="cstat-label">First Consultation</div>
-            </div>
-            <div class="cstat">
-              <div class="cstat-num">24hr</div>
-              <div class="cstat-label">Response Time</div>
-            </div>
-            <div class="cstat">
-              <div class="cstat-num">100%</div>
-              <div class="cstat-label">Colonization Guarantee</div>
-            </div>
-            <div class="cstat cstat-wa">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-                />
-              </svg>
-              <span>+250 796 600 706</span>
             </div>
           </div>
         </div>
@@ -3264,17 +3235,11 @@
       // Mobile menu
       function toggleMenu(open) {
         var links = document.getElementById("navLinks");
-        var cta = document.querySelector("nav .nav-cta");
         var isOpen = links.classList.contains("mobile-open");
         if (open === false || isOpen) {
           links.classList.remove("mobile-open");
-          if (cta) cta.style.display = "";
         } else {
           links.classList.add("mobile-open");
-          if (cta) {
-            cta.style.display = "block";
-            cta.style.marginTop = "0.5rem";
-          }
         }
       }
 
